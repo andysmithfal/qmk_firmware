@@ -49,8 +49,7 @@
 
 
 #ifdef RGB_MATRIX_ENABLE
-#define RGBLED_NUM 35    // Number of LEDs
-#define RGBLED_NUM 35    // Number of LEDs
+#define RGBLED_NUM 36
 #define RGB_MATRIX_LED_COUNT RGBLED_NUM
 #endif
 
@@ -68,9 +67,16 @@
 	//#define RGBLIGHT_EFFECT_ALTERNATING
 	//#define RGBLIGHT_EFFECT_TWINKLE
 
-    #define RGBLED_NUM 70
+    #define RGBLED_NUM 72
+
+    // this to flip right side effects, make same direction on both sides. 36 = indicator LED. But underglow looks very different.
+    // #define RGBLIGHT_LED_MAP { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37 }
+
+    // use key columns and backlight LEDs. Cool solid color on both sides. Use it.
+    #define RGBLIGHT_LED_MAP { 0, 6, 17, 29, 34, 22, 10, 11, 1, 2, 3, 4, 5, 7, 8, 9, 21, 23, 12, 13, 14, 15, 16, 18, 19, 20, 33, 35, 24, 25, 26, 27, 28, 30, 31, 32, 36, 66, 55, 43, 38, 50, 62, 61, 71, 70, 69, 68, 67, 65, 64, 63, 51, 49, 60, 59, 58, 57, 56, 54, 53, 52, 39, 37, 48, 47, 46, 45, 44, 42, 41, 40 }
+
 	//#define RGBLED_SPLIT
-	#define RGBLED_SPLIT { 35, 35 } // haven't figured out how to use this yet
+	#define RGBLED_SPLIT { 36, 36 } // haven't figured out how to use this yet //tooler
 
 	//#define RGBLED_NUM 30
     #define RGBLIGHT_LIMIT_VAL 120

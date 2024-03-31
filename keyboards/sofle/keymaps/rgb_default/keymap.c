@@ -26,8 +26,8 @@
 
 // Light combinations
 #define SET_INDICATORS(hsv) \
-	{0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
-    {35+0, 1, hsv}
+    {0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
+    {35+1, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}
 #define SET_UNDERGLOW(hsv) \
 	{1, 6, hsv}, \
     {35+1, 6,hsv}
@@ -53,14 +53,8 @@
 	{25, 2, hsv}, \
 	  {35+ 25, 2, hsv}
 #define SET_LAYER_ID(hsv) 	\
-	{0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
-    {35+0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
-		{1, 6, hsv}, \
-    {35+1, 6, hsv}, \
-		{7, 4, hsv}, \
-	  {35+ 7, 4, hsv}, \
-		{25, 2, hsv}, \
-	  {35+ 25, 2, hsv}
+    {0, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}, \
+    {35+1, 1, HSV_OVERRIDE_HELP(hsv, INDICATOR_BRIGHTNESS)}
 
 
 enum sofle_layers {
@@ -567,7 +561,7 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 				break;
 		}
     }
-    return true;
+    return false;
 }
 
 #endif
