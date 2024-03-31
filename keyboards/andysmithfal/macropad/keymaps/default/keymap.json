@@ -1,0 +1,34 @@
+{
+    "keyboard": "andysmithfal/macropad",
+    "keymap": "default",
+    "macros": [
+        [
+            {"action":"down", "keycodes": ["LSFT"]},
+            "hello world1",
+            {"action": "up","keycodes": ["LSFT"]}
+        ],
+        [
+            {"action":"tap", "keycodes": ["LCTL", "LALT", "DEL"]}
+        ],
+        [
+            "ding!",
+            {"action":"beep"}
+        ],
+        [
+            {"action":"tap", "keycodes": ["F1"]},
+            {"action":"delay", "duration": 1000},
+            {"action":"tap", "keycodes": ["PGDN"]}
+        ]
+    ],
+    "layout": "LAYOUT_numpad_6x4",
+    "layers": [
+        [
+            "QK_MACRO_0", "QK_MACRO_1", "QK_MACRO_2", "QK_MACRO_3", 
+    "KC_C",    "KC_U",    "KC_N",    "KC_T",
+    "KC_P7",   "KC_P8",   "KC_P9",   "KC_PPLS",
+    "KC_P4",   "KC_P5",   "KC_P6",   "_______", 
+    "KC_P1",   "KC_P2",   "KC_P3",   "KC_PENT",
+	  "KC_P0",   "KC_PDOT", "_______", "_______" 
+    ]
+    ]
+}

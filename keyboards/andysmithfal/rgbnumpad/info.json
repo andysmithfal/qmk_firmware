@@ -1,0 +1,87 @@
+{
+    "keyboard_name": "RGB Numpad",
+    "manufacturer": "Andy Smith",
+    "url": "https://github.com/andysmithfal/rgb_numpad",
+    "maintainer": "andysmithfal",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0xB252",
+        "device_version": "0.0.1"
+    },
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "encoder": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": false,
+        "rgb_matrix": true
+    },
+    "matrix_pins": {
+        "cols": ["GP2", "GP3", "GP4", "GP5"],
+        "rows": ["GP27", "GP6", "GP7", "GP8", "GP14", "GP15"]
+    },
+    "ws2812": {
+        "pin": "GP26"
+    },
+    "diode_direction": "COL2ROW",
+    "rgb_matrix": {
+        "driver": "WS2812",
+        "layout": [
+            { "flags": 4, "matrix": [1, 0], "x": 0, "y": 19.8},
+            { "flags": 4, "matrix": [1, 1], "x": 69.3, "y": 19.8},
+            { "flags": 4, "matrix": [1, 2], "x": 138.6, "y": 19.8},
+            { "flags": 4, "matrix": [1, 3], "x": 207.8, "y": 19.8},
+            { "flags": 4, "matrix": [2, 0], "x": 0, "y": 39.6},
+            { "flags": 4, "matrix": [2, 1], "x": 69.3, "y": 39.6},
+            { "flags": 4, "matrix": [2, 2], "x": 138.6, "y": 39.6},
+            { "flags": 4, "matrix": [2, 3], "x": 224, "y": 44.9},
+            { "flags": 4, "matrix": [3, 0], "x": 0, "y": 59.4},
+            { "flags": 4, "matrix": [3, 1], "x": 69.3, "y": 59.4},
+            { "flags": 4, "matrix": [3, 2], "x": 138.6, "y": 59.4},
+            { "flags": 4, "matrix": [4, 0], "x": 0, "y": 79.2},
+            { "flags": 4, "matrix": [4, 1], "x": 69.3, "y": 79.2},
+            { "flags": 4, "matrix": [4, 2], "x": 138.6, "y": 79.2},
+            { "flags": 4, "matrix": [4, 3], "x": 224, "y": 84.5},
+            { "flags": 4, "matrix": [5, 0], "x": 34.6, "y": 99},
+            { "flags": 4, "matrix": [5, 1], "x": 138.6, "y": 99},
+            { "flags": 4, "matrix": [0, 1], "x": 0, "y": 0},
+            { "flags": 4, "matrix": [0, 2], "x": 69.3, "y": 0},
+            { "flags": 4, "matrix": [0, 3], "x": 138.6, "y": 0}
+        ]
+    },
+    "layouts": {
+        "LAYOUT_numpad_6x4": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [1, 3], "x": 3, "y": 1},
+
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [2, 3], "x": 3, "y": 2, "h": 2},
+
+                {"matrix": [3, 0], "x": 0, "y": 3},
+                {"matrix": [3, 1], "x": 1, "y": 3},
+                {"matrix": [3, 2], "x": 2, "y": 3},
+
+                {"matrix": [4, 0], "x": 0, "y": 4},
+                {"matrix": [4, 1], "x": 1, "y": 4},
+                {"matrix": [4, 2], "x": 2, "y": 4},
+                {"matrix": [4, 3], "x": 3, "y": 4, "h": 2},
+
+                {"matrix": [5, 0], "x": 0, "y": 5, "w": 2},
+                {"matrix": [5, 2], "x": 2, "y": 5}
+            ]
+        }
+    }
+}
